@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: spring-docker-pod
+spec:
+   containers:
+   - name: spring-docker-container
+     image: 74112692/spring-docker-test
+     ports:
+     - containerPort: 6379
